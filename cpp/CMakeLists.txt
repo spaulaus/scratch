@@ -3,8 +3,8 @@ project(scratch_cpp)
 
 set(CMAKE_CXX_STANDARD 14)
 
+add_executable(test_random_gamma_generation test_random_gamma_generation.cpp)
 add_executable(numerical_recipes_fft numerical_recipes_fft.cpp)
-
 add_executable(scratch scratch.cpp)
 
 list(APPEND CMAKE_PREFIX_PATH $ENV{ROOTSYS}/cmake)
