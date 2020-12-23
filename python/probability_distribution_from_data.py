@@ -11,7 +11,7 @@ counts = [x[1] for x in cs137_spectrum]
 weights = [x / sum(counts) for x in counts]
 
 num_choices = 2563370
-bins = 800
+bins = 750
 
 ax = plt.gca()
 DataFrame(random.choice(choices, num_choices, p=weights)).hist(bins=bins * root_binning_factor,
